@@ -1,5 +1,5 @@
 package com.demo.springcore;
-
+//Just trying git commands to check whether it is working or not
 public class Student {
 	private String studentName;
 	private String studentId;
