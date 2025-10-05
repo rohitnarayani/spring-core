@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:context="http://www.springframework.org/schema/context"
+xmlns:p="http://www.springframework.org/schema/p"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+https://www.springframework.org/schema/beans/spring-beans.xsd
+https://www.springframework.org/schema/contex
+https://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean class="com.springcore.ci.Certi" name="cer">
+		<constructor-arg value="Android using java"/>
+	</bean>
+	
+	<bean class="com.springcore.ci.Person" name="person">
+		<constructor-arg name="name" value="Rohit"/>
+		<constructor-arg name="personId" value="10" type="int"/>
+		<constructor-arg ref="cer"/>
+		<constructor-arg>
+			<list>
+				<value>List1</value>
+				<value>List2</value>
+				<value>List3</value>
+				<value>List4</value>
+			</list>
+		</constructor-arg>
+	</bean>
+	
+	<bean class="com.springcore.ci.Addition" name="add">
+		<!--<constructor-arg value="39.2"/>
+		<constructor-arg value="49.3"/>-->
+		<constructor-arg value="39" type="int" index="1"/>
+		<constructor-arg value="32" type="int" index="0"/>
+	</bean>
+</beans>

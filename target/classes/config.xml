@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:context="http://www.springframework.org/schema/context"
+xmlns:p="http://www.springframework.org/schema/p"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+https://www.springframework.org/schema/beans/spring-beans.xsd
+https://www.springframework.org/schema/contex
+https://www.springframework.org/schema/context/spring-context.xsd">
+
+<bean class="com.demo.springcore.Student" name="student1">
+	<property name="studentId" value="std001"/>
+	<property name="studentName" value="Rohit"/>
+	<property name="studentAddress" value="ksad"/>
+</bean>
+
+<bean class="com.demo.springcore.Student " name="student2" p:studentId="std002" p:studentName="Yash" p:studentAddress="Ksad" />
+
+</beans>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:context="http://www.springframework.org/schema/context"
+xmlns:p="http://www.springframework.org/schema/p"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+https://www.springframework.org/schema/beans/spring-beans.xsd
+https://www.springframework.org/schema/contex
+https://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean class="com.springcore.collections.Customer" name="cust1">
+		<property name="name" value="Customer1"/>
+		
+		<property name="addresses">
+			<list>
+				<value>Ksad</value>
+				<value>Anand</value>
+				<value>Vvn</value>
+			</list>
+		</property>
+		
+		<property name="phno">
+			<set>
+				<value>9428900845</value>
+				<value>1236547980</value>
+				<value>8718758789</value>
+			</set>
+		</property>
+		
+		<property name="accounts">
+			<map>
+				<entry key="A01" value="Hero"/>
+				<entry key="A02" value="Chetak"/>
+				<entry key="A03" value="Rano"/>
+			</map>	
+		</property>
+		
+		<property name="props">
+			<props>
+				<prop key="user">root</prop>
+				<prop key="password">12345</prop>
+			</props>
+		</property>
+	</bean>
+
+</beans>
