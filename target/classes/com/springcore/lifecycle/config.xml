@@ -10,7 +10,7 @@
            http://www.springframework.org/schema/context 
            https://www.springframework.org/schema/context/spring-context.xsd">
 
-	<!--<context:annotation-config />-->
+	<context:annotation-config />
 	<!-- <bean class="com.springcore.lifecycle.Test" name="t1" init-method="init" 
 		destroy-method="destroy"> <property name="price" value="90.3"/> </bean> <bean 
 		class="com.springcore.lifecycle.TestInterface" name="ti"> <property name="value" 
