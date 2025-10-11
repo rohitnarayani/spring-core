@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context.xsd
+           http://www.springframework.org/schema/util
+           http://www.springframework.org/schema/util/spring-util.xsd">
+	  
+	  	  
+	  <!--standalone-list-->
+	  <util:list  list-class="java.util.ArrayList" id="myfriends">
+	  <value>Rajaak</value>
+	  <value>Firoz</value>
+	  <value>Hasnen</value>
+	  <value>Faizan</value>
+	  </util:list>
+	  
+	  
+	  <util:map map-class="java.util.TreeMap" id="fs">
+	  		<entry key="Frontend Devlopment" value="20000"/>
+	  		<entry key="Backend Devlopment" value="40000"/>
+			<entry key="Fullstack Devlopment" value="80000"/>
+	  </util:map>
+	  
+	  <util:properties id="props">
+	  		<prop key="user">root</prop>
+	  		<prop key="pass">12345</prop>
+	  		<prop key="driver">com.mysql.cj.jdbc.Driver</prop>
+	  </util:properties>
+	  
+	  <bean class=" com.springcore.standalone.collections.Person" name="p">
+	  	<property name="friends">
+	  		<ref bean="myfriends"/>
+	  	</property>
+	  	<property name="feestructure" ref="fs"/>
+	  	<property name="properties" ref="props"/>
+	  	
+	  </bean>
+</beans>
