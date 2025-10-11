@@ -1,6 +1,7 @@
 package com.springcore.autowire.annotation;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 
 public class Customer {
 	private String cid;
@@ -30,7 +31,8 @@ public class Customer {
 		this.cname = cname;
 	}
 	@Autowired
-	public Customer(Account acc) {
+	
+	public Customer(@Qualifier("acc2")Account acc) {
 		super();
 		this.acc = acc;
 		System.out.println("Inside constructor acc");

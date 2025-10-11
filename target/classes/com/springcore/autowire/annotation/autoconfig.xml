@@ -18,6 +18,11 @@
         <property name="ano" value="A0001"/>
         <property name="balance" value="90000.33"/>
     </bean>
+    
+    <bean name="acc2" class="com.springcore.autowire.annotation.Account">
+        <property name="ano" value="A0002"/>
+        <property name="balance" value="30000.33"/>
+    </bean>
 
     <bean id="cust" class="com.springcore.autowire.annotation.Customer"
           p:cid="C0001" p:cname="Rahul"/>
