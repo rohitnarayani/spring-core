@@ -23,4 +23,5 @@
 	   
 	   
 	   <bean class="com.springcore.stereotype.Sample" name="s1" scope="prototype"/>
+	  <!-- <bean class="com.springcore.stereotype.Student" name="st" scope="sigletone"/>-->
 </beans>

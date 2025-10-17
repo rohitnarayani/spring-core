@@ -7,13 +7,7 @@
            https://www.springframework.org/schema/beans/spring-beans.xsd
            http://www.springframework.org/schema/context
            https://www.springframework.org/schema/context/spring-context.xsd">
-
-<bean class="com.demo.springcore.Student" name="student1">
-	<property name="studentId" value="std001"/>
-	<property name="studentName" value="Rohit"/>
-	<property name="studentAddress" value="ksad"/>
-</bean>
-
-<bean class="com.demo.springcore.Student " name="student2" p:studentId="std002" p:studentName="Yash" p:studentAddress="Ksad" />
+           
+           <context:component-scan base-package="com.springcore.spel"></context:component-scan>
 
 </beans>

@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component("obj")
-@Scope("prototype")
+@Scope("singleton")
 public class Student {
 	@Value("Rohit")
 	private String name;
